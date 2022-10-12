@@ -324,6 +324,13 @@ const engines = {
       target: 'https://lexica.art/',
       isExec: true
     }
+  },
+  camGirlFinder: {
+    url: {target: 'https://camgirlfinder.net/search?url={imgUrl}'},
+    image: {
+      target: 'https://camgirlfinder.net/search',
+      isExec: true
+    }
   }
 };
 
@@ -341,7 +348,8 @@ const rasterEngineIcons = [
   'karmaDecay',
   'tineye',
   'whatanime',
-  'repostSleuth'
+  'repostSleuth',
+  'camGirlFinder'
 ];
 
 const engineIconAlias = {branddb: 'wipo', madridMonitor: 'wipo'};
@@ -560,7 +568,8 @@ const webpEngineSupport = [
   'shein',
   'lykdat',
   'googleLens',
-  'lexica'
+  'lexica',
+  'camGirlFinder'
 ];
 
 // Search engines only support the image format in compatible browsers.
@@ -621,7 +630,8 @@ const maxImageUploadSize = {
   lykdat: {ui: 9 * 1024 * 1024},
   wildberries: {ui: 8 * 1024 * 1024},
   googleLens: {api: 20 * 1024 * 1024},
-  lexica: {ui: 30 * 1024 * 1024}
+  lexica: {ui: 30 * 1024 * 1024},
+  camGirlFinder: {ui: 3 * 1024 * 1024}
 };
 
 const chromeDesktopUA =
